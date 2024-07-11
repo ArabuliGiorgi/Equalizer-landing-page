@@ -8,7 +8,7 @@ h1, p{
 }
 body{
     background-image: url(images/bg-main-mobile.png);
-    background-position: 159px -104px;
+    background-position: calc(100% + 65.4px) -104px;
     background-repeat: no-repeat;
     background-size: 281.4px 480px;
     background-color: #FCFAF9;
@@ -35,13 +35,6 @@ footer{
     width: 100%;
     max-width: 1110px;
     margin: auto;
-}
-#bg-pattern-1{
-    position: absolute;
-    height: 400px;
-    top: -32px;
-    right: 0;
-    display: none;
 }
 #main-logo{
     height: 32px;
@@ -204,9 +197,9 @@ footer{
 
 @media only screen and (min-width: 720px){
     body{
-        background-image: url(images/bg-main-tablet.png);
-        background-position: -254px -112px;
-        background-size: 983px 808px;
+        background-image: url(images/bg-main-tablet.png), url(images/bg-pattern-1.svg);
+        background-position: calc(100% - 39px) -112px, calc(100% + 35.67px) -40px;
+        background-size: 983px 808px, 266.67px 400px;
     }
     header{
         padding-top: 62px;
@@ -217,9 +210,6 @@ footer{
     }
     footer{
         padding: 0 39px 85px 33px;
-    }
-    #bg-pattern-1{
-        display: block;
     }
     #main-logo{
         margin-left: 6px;
@@ -274,9 +264,9 @@ footer{
 
 @media only screen and (min-width: 1440px){
     body{
-        background-image: url(images/bg-main-desktop.png);
-        background-position: -146px -112px;
-        background-size: 1613px 1758px;
+        background-image: url(images/bg-main-desktop.png), url(images/bg-pattern-1.svg);
+        background-position: calc(100% + 27px) -112px, 100% -40px;
+        background-size: 1613px 1758px, 312px 468px;
     }
     header{
         padding-left: 0;
@@ -287,9 +277,6 @@ footer{
     }
     footer{
         padding: 0 0 91px 0;
-    }
-    #bg-pattern-1{
-        height: 468px;
     }
     #main-logo{
         margin-left: 0;
