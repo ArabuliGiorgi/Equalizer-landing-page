@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, p{
+    font-family: "IBM Plex Sans", sans-serif;
+}
+body{
+    background-image: url(images/bg-main-mobile.png);
+    background-position: 159px -104px;
+    background-repeat: no-repeat;
+    background-size: 281.4px 480px;
+    background-color: #FCFAF9;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+header{
+    padding-top: 40px;
+    width: 100%;
+    max-width: 1110px;
+    margin: auto;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1110px;
+    margin: auto;
+}
+footer{
+    padding-bottom: 80px;
+    width: 100%;
+    max-width: 1110px;
+    margin: auto;
+}
+#bg-pattern-1{
+    position: absolute;
+    height: 400px;
+    top: -32px;
+    right: 0;
+    display: none;
+}
+#main-logo{
+    height: 32px;
+    margin: auto;
+    margin-bottom: 64px;
+    margin-left: 24px;
+}
+.first-texts{
+    margin: 0 24px 68px 24px;
+}
+.first-texts h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.45px;
+    color: #191826;
+    margin-bottom: 20px;
+}
+.first-texts p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #191826;
+}
+.main-div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 48px;
+}
+#illustration{
+    height: 430px;
+    margin: auto;
+}
+.back-div{
+    background-color: #191826;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 98px;
+    z-index: -1;
+}
+.back-div img{
+    width: 280px;
+}
+.offer-div{
+    margin: auto;
+    background-color: #FA7453;
+    width: 100%;
+    max-width: 399px;
+    border-radius: 10px;
+    padding: 48px 36px;
+    display: flex;
+    flex-direction: column;
+}
+#offer-heading{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FCFAF9;
+    margin-bottom: 12px;
+}
+#offer-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FCFAF9;
+    margin-bottom: 36px;
+}
+#offer-price{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    color: #FCFAF9;
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+}
+#offer-price span{
+    letter-spacing: 0;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 52px;
+    margin-right: 16px;
+}
+.buttons{
+    width: 100%;
+    height: 61px;
+    margin-left: 5px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 14px 0;
+    gap: 6px;
+}
+.buttons:hover{
+    cursor: pointer;
+}
+.buttons h1{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+}
+#btn1{
+    margin-top: 32px;
+    background-color: #191826;
+}
+#btn1:active{
+    background-color: #66E2DC;
+}
+#btn1 h1{
+    color: #FCFAF9;
+}
+#btn2{
+    margin-top: 16px;
+    background-color: #FCFAF9;
+}
+#btn2:active{
+    background-color: #FFB964;
+}
+#btn2 h1{
+    color: #191826;
+}
+.last-div{
+    margin: 64px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.contact-div img{
+    height: 32px;
+    margin-bottom: 32px;
+}
+#contact-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 366px;
+    color: #191826;
+}
+#contact-text span{
+    font-weight: 700;
+}
+.medias-div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.medias-div img:hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 720px){
+    body{
+        background-image: url(images/bg-main-tablet.png);
+        background-position: -254px -112px;
+        background-size: 983px 808px;
+    }
+    header{
+        padding-top: 62px;
+        padding-left: 33px;
+    }
+    main{
+        padding: 0 39px 0 33px;
+    }
+    footer{
+        padding: 0 39px 85px 33px;
+    }
+    #bg-pattern-1{
+        display: block;
+    }
+    #main-logo{
+        margin-left: 6px;
+        margin-bottom: 95px;
+    }
+    .first-texts{
+        max-width: 520px;
+        margin: 0 0 111px 6px;
+    }
+    .first-texts h1{
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.73px;
+        margin-bottom: 28px;
+    }
+    .first-texts p{
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 514px;
+    }
+    .main-div{
+        gap: 0;
+    }
+    #illustration{
+        margin-left: 64px;
+        height: 556px;
+    }
+    .back-div{
+        top: 138px;
+        justify-content: start;
+    }
+    .back-div img{
+        margin-top: -31px;
+        margin-left: 229px;
+    }
+    .offer-div{
+        margin-right: 58px;
+        margin-top: -268px;
+    }
+    
+    .last-div{
+        margin: 0;
+        margin-top: 87px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+    }
+    .medias-div{
+        margin-bottom: 29px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    body{
+        background-image: url(images/bg-main-desktop.png);
+        background-position: -146px -112px;
+        background-size: 1613px 1758px;
+    }
+    header{
+        padding-left: 0;
+    }
+    main{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer{
+        padding: 0 0 91px 0;
+    }
+    #bg-pattern-1{
+        height: 468px;
+    }
+    #main-logo{
+        margin-left: 0;
+    }
+    .first-texts{
+        margin: 0;
+        max-width: 1015px;
+        margin-bottom: 108px;
+    }
+    .first-texts h1{
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -1px;
+        margin-bottom: 40px;
+    }
+    .first-texts p{
+        font-size: 20px;
+        line-height: 34px;
+        max-width: 825px;
+    }
+    #illustration{
+        margin-left: 102px;
+        height: 642px;
+    }
+    .back-div{
+        top: 213px;
+    }
+    .back-div img{
+        width: 312px;
+        margin-left: 336px;
+        margin-top: -40px;
+    }
+    .offer-div{
+        max-width: 446px;
+        padding: 58px 59px 48px 54px;
+        margin-right: 95px;
+        margin-top: -339px;
+    }
+    #offer-heading{
+        font-size: 40px;
+        line-height: 52px;
+        margin-bottom: 22px;
+    }
+    #offer-text{
+        font-size: 20px;
+        line-height: 34px;
+        margin-bottom: 39px;
+    }
+    #btn1{
+        margin-top: 46px;
+    }
+    .contact-div img{
+        margin: 0;
+    }
+    .contact-div{
+        display: flex;
+        gap: 138px;
+    }
+}
